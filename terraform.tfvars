@@ -12,4 +12,6 @@ Owner = "bharat.joshi@cloudeq.com"
 
 Purpose = "TASK"
 
+subnet = "subnet-0962069167a59d185"
+
 

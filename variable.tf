@@ -26,3 +26,7 @@ variable "Owner" {
 variable "Purpose" {
   type = string
 }
+
+variable "subnet" {
+  type = string
+}

@@ -2,7 +2,7 @@ resource "aws_instance" "ec1" {
   ami = var.ami
   instance_type = var.type
   key_name =  "bharat"
-  subnet_id = "subnet-0962069167a59d185"
+  subnet_id = var.subnet
   vpc_security_group_ids = [aws_security_group.Bharat-joshisg.id]
   
   
@@ -30,9 +30,7 @@ resource "aws_instance" "ec1" {
 resource "aws_security_group" "Bharat-joshisg" {
   name        = var.name
   description = "Creating security group for training purpose"
-  vpc_id      = "vpc-0db9b000905eaca0e"
-
-
+  vpc_id      = var.vpc_id
 
   ingress {
     description      = "SSH"
